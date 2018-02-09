@@ -151,7 +151,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-                <url>http://35.231.110.82:9001/manager/text</url>
+                <url>http://35.227.58.51:7777/manager/text</url>
                 <server>TomcatServer1</server>
                 <path>/DEV-WebApp</path>
         </configuration>
@@ -170,7 +170,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.2</version>
         <configuration>
-                <url>http://35.231.110.82:9001/manager/text</url>
+                <url>http://35.227.58.51:7777/manager/text</url>
                 <server>TomcatServer2</server>
                 <path>/QA-WebApp</path>
         </configuration>
