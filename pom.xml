@@ -153,7 +153,7 @@
         <configuration>
                 <url>http://35.227.58.51:7777/manager/text</url>
                 <server>TomcatServer1</server>
-                <path>/DEV-WebApp</path>
+                <path>/DEV-SpringApp</path>
         </configuration>
 </plugin>
 </plugins>
@@ -172,7 +172,7 @@
         <configuration>
                 <url>http://35.227.58.51:7777/manager/text</url>
                 <server>TomcatServer2</server>
-                <path>/QA-WebApp</path>
+                <path>/QA-SpringApp</path>
         </configuration>
 </plugin>
 </plugins>
