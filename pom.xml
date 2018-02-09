@@ -139,6 +139,47 @@
 		</dependency>
 		
 	</dependencies>
+	
+	<profiles>
+<profile>
+<id>DEV</id>
+<build>
+    <finalName>WebApp</finalName>
+<plugins>
+<plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+                <url>http://35.227.58.51:7777/manager/text</url>
+                <server>TomcatServer1</server>
+                <path>/DEV-SpringApp</path>
+        </configuration>
+</plugin>
+</plugins>
+</build>
+</profile>
+
+<profile>
+<id>QA</id>
+<build>
+    <finalName>WebApp</finalName>
+<plugins>
+<plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+        <configuration>
+                <url>http://35.227.58.51:7777/manager/text</url>
+                <server>TomcatServer2</server>
+                <path>/QA-SpringApp</path>
+        </configuration>
+</plugin>
+</plugins>
+	</build>
+	</profile>
+	
+	</profiles>
 
 	<build>
 	    <plugins>
